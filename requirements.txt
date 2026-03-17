@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+supabase
+anthropic
+openai
+pydantic
+pydantic-settings
+python-dotenv
+websockets
+resend
+jinja2
+python-multipart
+PyPDF2
+sentence-transformers
+numpy
+pandas

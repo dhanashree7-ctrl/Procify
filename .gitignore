@@ -1,0 +1,9 @@
+# Ignore node_modules, .env, and venv
+node_modules/
+.env
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+*.log

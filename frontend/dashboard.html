@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procify | Live Auditor Monitor</title>
+    <style>
+        body { background: #020617; color: white; font-family: 'JetBrains Mono', monospace; margin: 0; }
+        .monitor-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; padding: 1rem; }
+        .feed { background: #0f172a; aspect-ratio: 16/9; border: 1px solid #1e293b; border-radius: 0.5rem; position: relative; overflow: hidden; }
+        .feed-label { position: absolute; top: 0.5rem; left: 0.5rem; background: rgba(0,0,0,0.5); padding: 0.2rem 0.5rem; font-size: 0.7rem; border-radius: 0.2rem; }
+        .alert-overlay { position: absolute; inset: 0; border: 2px solid #ef4444; pointer-events: none; opacity: 0; }
+        .alert-active { opacity: 1; animation: flash 1s infinite; }
+        @keyframes flash { 0% { opacity: 0.2; } 50% { opacity: 1; } 100% { opacity: 0.2; } }
+    </style>
+</head>
+<body>
+    <div style="padding: 1rem; border-bottom: 1px solid #1e293b; display: flex; justify-content: space-between;">
+        <span>LIVE AUDITOR FEED: SESSION PRO123</span>
+        <span style="color: #10b981">● SYNCED</span>
+    </div>
+    <div class="monitor-grid">
+        <div class="feed">
+            <div class="feed-label">STUDENT: 1MS20IS001</div>
+            <div class="alert-overlay alert-active"></div>
+        </div>
+        <div class="feed">
+            <div class="feed-label">STUDENT: 1MS20IS002</div>
+        </div>
+        <div class="feed">
+            <div class="feed-label">STUDENT: 1MS20IS003</div>
+        </div>
+    </div>
+</body>
+</html>

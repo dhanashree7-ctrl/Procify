@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procify | Admin Dashboard</title>
+    <style>
+        body { background: #0f172a; color: white; font-family: 'Inter', sans-serif; margin: 0; }
+        nav { padding: 1rem 2rem; background: #1e293b; display: flex; gap: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding: 2rem; }
+        .stat-card { background: #1e293b; padding: 1.5rem; border-radius: 0.75rem; border: 1px solid #334155; }
+        .btn-plus { width: 40px; height: 40px; border-radius: 50%; background: #6366f1; color: white; border: none; font-size: 24px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="font-weight:bold">PROCIFY ADMIN</div>
+        <div>Exams</div>
+        <div>Interviews</div>
+        <div>Candidates</div>
+    </nav>
+    <div style="padding: 2rem 2rem 0; display: flex; justify-content: space-between; align-items: center;">
+        <h2>Active Sessions</h2>
+        <button class="btn-plus">+</button>
+    </div>
+    <div class="grid">
+        <div class="stat-card">
+            <h3>Mid-Term Exam</h3>
+            <p>Code: <strong>PRO123</strong></p>
+            <p>Students: 45 Active</p>
+        </div>
+        <div class="stat-card">
+            <h3>Frontend Developer Interview</h3>
+            <p>Code: <strong>INT-FEL</strong></p>
+            <p>Candidates: 3 Remaining</p>
+        </div>
+    </div>
+</body>
+</html>
